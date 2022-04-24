@@ -82,9 +82,8 @@ section.imagem{
 }
 section.imagem > p{
     color: white;
-    background-color: rgba(0, 0, 0, 0.374);
     border-radius: 3px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.488);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.488);
 }
 section.normal > p{
     color: black;
@@ -101,11 +100,12 @@ section#img02{
 p{
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 40vw;
     padding: 10px;
     text-align: center;
     font-family: var(--fonte3);
     font-size: 2vw;
+    font-size: 2vh;
 }
 
 footer{
