@@ -19,7 +19,7 @@ html,body{
     font-family: var(--fonte1);
 }
 header{
-    background-color: coral;
+    background-color: rgb(255, 196, 0);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -43,10 +43,13 @@ header > p{
     gap: 10px;
     
 }
-body > header a, body > main a{
+body > header a, body > main a, body > footer a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+a:hover{
+    color: gray;
 }
 main{
     min-width: 300px;
@@ -57,30 +60,44 @@ main{
 section{
     display: flex;
     flex-direction: column;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     padding-left: 30px;
     line-height: 2em;
+    gap: 1px;
 }
 section.normal{
     background-color: white;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
 }
 section.imagem{
     background-color: coral;
-    flex-direction: row-reverse;
     padding-right: 30px;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.518);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 section.imagem > p{
     color: white;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.374);
     border-radius: 3px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.488);
 }
 section.normal > p{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.521);
+    color: black;
     border-radius: 3px;
 }
-
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
 p{
     display: flex;
     flex-direction: column;
@@ -92,7 +109,7 @@ p{
 }
 
 footer{
-    background-color: tomato;
+    background-color: rgb(255, 196, 0);
     width: 100%;
     display: flex;
     padding-top: 50px;
