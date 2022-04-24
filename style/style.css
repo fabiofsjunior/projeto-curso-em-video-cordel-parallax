@@ -40,9 +40,9 @@ header > p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    
+    gap: 10px;  
 }
+
 body > header a, body > main a, body > footer a{
     text-decoration: none;
     color: black;
@@ -118,4 +118,8 @@ footer{
     justify-content: center; 
     font-size: x-small;
     font-family: var(--fonte2);
+}
+
+footer h1{
+    text-align: center;
 }
